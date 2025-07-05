@@ -3,7 +3,7 @@ using MongoDB.Driver;
 
 namespace DataAccessLayer.RepositoryContracts;
 
-public interface IOrderRepository
+public interface IOrdersRepository
 {
     Task<IEnumerable<Order>> GetOrders();
     Task<IEnumerable<Order?>> GetOrdersByCondition(FilterDefinition<Order> filter);

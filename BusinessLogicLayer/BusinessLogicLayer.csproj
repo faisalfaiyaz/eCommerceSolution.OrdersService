@@ -16,4 +16,10 @@
     <ProjectReference Include="..\DataAccessLayer\DataAccessLayer.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="DTO\" />
+    <Folder Include="Mappers\" />
+    <Folder Include="ServiceContracts\" />
+  </ItemGroup>
+
 </Project>

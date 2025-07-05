@@ -4,10 +4,10 @@ using MongoDB.Driver;
 
 namespace DataAccessLayer.Repositories;
 
-public class OrderRepository : IOrderRepository
+public class OrdersRepository : IOrdersRepository
 {
     private readonly IMongoCollection<Order> _order;
-    public OrderRepository(IMongoDatabase mongoDatabase)
+    public OrdersRepository(IMongoDatabase mongoDatabase)
     {
         _order = mongoDatabase.GetCollection<Order>("orders");
         
